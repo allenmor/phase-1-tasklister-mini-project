@@ -9,10 +9,16 @@
   <div id="main-content">
     <h1>Task Lister Lite™️</h1>
 
-    <form id="create-task-form" action="" method="POST">
+    <form id="create-task-form" action="#" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="submit" id="toDoButton" value="Create New Task">
+      <select name="Priority" id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="submit" id="resetList" value="Reset List">
     </form>
 
     <div id="list">
@@ -21,8 +27,8 @@
       </ul>
     </div>
 
-    <script src="./src/index.js"></script>
-  </div>
 
+  </div>
+  <script src="./src/index.js"></script>
 </body>
 </html>
